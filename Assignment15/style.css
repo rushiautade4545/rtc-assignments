@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.crd{
+   height: 260px;
+   width: 150px;
+   border-radius: 5px;
+   display: inline-block;
+   border: 1px black;
+   box-shadow: 0px 0px 6px 1px rgb(107, 107, 107);
+}
+.img{
+    height: 110px;
+    width: 140px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.card-title{
+ margin-left: 30px;
+ font-size: 15px;
+ margin-top: 10px;
+}
+.text{
+    font-size: 7px;
+    padding: 5px 10px;
+    text-align: justify;
+}
+.price{
+    font-size: 10px;
+    padding: 5px 10px;
+}
+.btn{
+   margin-left: 25px;
+    padding: 5px 30px;
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+
+
