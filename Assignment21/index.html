@@ -1,86 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receipt</title>
     <style>
-        body{
+        body {
             background-color: #eeeee4;
         }
-        .text-center{
+
+        .text-center {
             text-align: center;
         }
-        .receipt{
+
+        .receipt {
             width: 80%;
             margin: 10px auto;
             background-color: #fff;
             border-radius: 5px;
             padding: 10px;
         }
-        .receipt-header{
+
+        .receipt-header {
             border-bottom: 1px dashed;
         }
-        .brand-logo{
+
+        .brand-logo {
             height: 100px;
         }
-        .brand-title{
+
+        .brand-title {
             font-size: 25px;
         }
-        .brand-address{
+
+        .brand-address {
             text-align: right;
         }
-        .receipt-body{
-          position: relative;
+
+        .receipt-body {
+            position: relative;
         }
-        .receipt-title{
+
+        .receipt-title {
             font-size: 30px;
         }
-        .receipt-detail{
+
+        .receipt-detail {
             display: flex;
             justify-content: center;
             font-size: 20px;
             margin: 20px;
         }
-        .receipt-datail-key{
+
+        .receipt-datail-key {
             color: gray;
             width: 30%;
         }
-        .receipt-detail-value{
+
+        .receipt-detail-value {
             font-weight: bold;
-            border-bottom: 1px dashed ;
+            border-bottom: 1px dashed;
             width: 20%;
         }
-        .accountant-sign{
+
+        .accountant-sign {
             text-align: right;
             margin: 50px 10px;
-            font:bold;
+            font: bold;
         }
-        .stamp{
-           height: 140px;
-           position: absolute;
-           right: 0;
-           bottom: -30px;
-           transform: rotate(-30deg);
+
+        .stamp {
+            height: 140px;
+            position: absolute;
+            right: 0;
+            bottom: -30px;
+            transform: rotate(-30deg);
         }
-        .receipt-footer{
+
+        .receipt-footer {
             padding: 15px 0;
             font-size: 25px;
             background-color: rgb(244, 244, 63);
         }
 
+         @media only screen and (max-width: 470px) { 
+            /*for mobile */
+
+            .receipt {
+                text-align: center;
+            }
+            .accountant-sign{
+                text-align: center;
+                margin: 80px 80px;
+            }
+
+            .stamp {
+                position: absolute;
+                right: 80px;
+                bottom: -50px;
+            }
+        }
+
+        @media only screen and (max-width: 850px) {
+            .accountant-sign {
+            text-align: right;
+            margin: 50px 10px;
+            font: bold;
+        }
+
+        .stamp {
+            height: 140px;
+            position: absolute;
+            right: 0;
+            bottom: -30px;
+            transform: rotate(-30deg);
+        }
+
+        }
+
 
     </style>
 </head>
+
 <body>
     <div class="receipt">
 
         <div class="receipt-header text-center">
-            <img src="/Assignment21/images/homepage logo.png" alt="logo" class="brand-logo text-center">
+            <img src="/Assignment21/images/homepage logo.png " alt="logo" class="brand-logo text-center">
             <h2 class="brand-title text-center">PharmaCare</h2>
             <p class="brand-address">
-                2024,Near Vikhe Patil Hospital,<br/>
-                Vilad Ghat,Vadgaon Gupta,<br/>
+                2024,Near Vikhe Patil Hospital,<br />
+                Vilad Ghat,Vadgaon Gupta,<br />
                 Ahmednagar,414111
             </p>
             <p class="brand-address">+91-9822582525</p>
@@ -88,34 +139,35 @@
 
         <div class="receipt-body ">
             <h3 class="receipt-title text-center">Payment Receipt</h3>
-             <div class="receipt-detail">
+            <div class="receipt-detail">
                 <span class="receipt-datail-key">Receipt No.:</span>
                 <span class="receipt-detail-value">12345</span>
-             </div>
-             <div class="receipt-detail">
+            </div>
+            <div class="receipt-detail">
                 <span class="receipt-datail-key">Amount:</span>
                 <span class="receipt-detail-value">2999/-</span>
-             </div>
-             <div class="receipt-detail">
+            </div>
+            <div class="receipt-detail">
                 <span class="receipt-datail-key">Paymet mode:</span>
                 <span class="receipt-detail-value">Card</span>
-             </div>
-             <div class="receipt-detail">
+            </div>
+            <div class="receipt-detail">
                 <span class="receipt-datail-key">Payment Date:</span>
                 <span class="receipt-detail-value">14 feb 2024</span>
-             </div>
-              
-             <img src="/Assignment21/images/pngwing.com.png" alt="paid-stamp" class="stamp">
-             <p class="accountant-sign">Accountant Signature</p>
+            </div>
+
+            <img src="/Assignment21/images/pngwing.com.png" alt="paid-stamp" class="stamp">
+            <p class="accountant-sign">Accountant Signature</p>
         </div>
-        
-        <hr/>
-          
+
+        <hr />
+
         <p>This is computer generated receipt does not require any signature</p>
-           
+
         <div class="receipt-footer text-center">
-           <p>Thank You For Payment!</p>
+            <p>Thank You For Payment!</p>
         </div>
     </div>
 </body>
+
 </html>
